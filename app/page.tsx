@@ -1,6 +1,8 @@
 import { getProducts } from "@/lib/notion";
 import BakeryOrderForm from "@/components/order-form";
 
+export const revalidate = 60;
+
 export default async function Page() {
   // 1. Fetch data on the server
   const menuItems = await getProducts();
