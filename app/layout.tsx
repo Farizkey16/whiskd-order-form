@@ -15,9 +15,23 @@ const _lazydog = localFont({ src: "./fonts/LazyDog-Regular.ttf",
  })
 
 export const metadata: Metadata = {
-  title: "Whisk'd - Order Online",
+  title: "Whisk'd Order Form",
   description: "Cheesecakes, Puddings, and More - Order Your Favorites Online!",
-}
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+
+
 
 export default function RootLayout({
   children,
